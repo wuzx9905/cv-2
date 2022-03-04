@@ -98,6 +98,10 @@
             position: relative;
         }
 
+        .bio  a{
+            border-bottom: hidden;
+        }
+
         .bio img {
             position: absolute;
             top: 0;
@@ -107,7 +111,10 @@
     
 </style>
     <style>
-        .projects {}
+        .projects h2{
+            border-bottom: 2px solid #999;
+            padding-top: 24px;
+        }
 
         .projects p {
             color: #666;
@@ -140,7 +147,9 @@
     <style>
         .jobs {}
 
-        .jobs>h2 {}
+        .jobs>h2 {
+            border-bottom: 2px solid #999;
+        }
 
         .jobs>ol {}
 
@@ -171,7 +180,9 @@
     
 </style>
     <style>
-        .skills {}
+        .skills h2{
+            border-bottom: 2px solid #999;
+        }
 
         .skills>.wrapper {
             display: flex;
@@ -204,7 +215,9 @@
     <style>
         .openSource {}
 
-        .openSource>h2 {}
+        .openSource>h2 {
+            border-bottom: 2px solid #999;
+        }
 
         .openSource>ul {}
 
@@ -218,6 +231,12 @@
         }
 
         .openSource>h3 {}
+    
+</style>
+    <style>
+        .others h2{
+            border-bottom: 2px solid #999;
+        }
     
 </style>
     <style>
@@ -261,19 +280,25 @@
     <article>
         <section class="bio">
             <h1>吴梓贤</h1>
-            <img src="/self_Photo.1010fb34.jpeg" alt="" width="183" height="175">
+            <img src="/self_Photo.1010fb34.jpeg" alt="" width="201" height="192">
             <p>
                 男｜23岁｜前端开发工程师｜广州
             </p>
+
             <p>
-                手机：15220770628｜微信：15220770628｜邮箱：Wuzx0523@outlook.com
+                手机：<a href="tel:15220770628">15220770628</a>｜微信：DodoWu_0523
             </p>
+            <p>
+                邮箱：<a href="mailto:Wuzx0523@outlook.com">Wuzx0523@outlook.com</a>
+            </p>
+            <p>GitHub：<a href="https://github.com/wuzx9905">https://github.com/wuzx9905</a></p>
+            <p>博客地址：<a href="https://juejin.cn/user/3711599164533917/posts">https://juejin.cn/user/3711599164533917/posts</a></p>
         </section>
         <section class="education">
             <h2>教育经历</h2>
             <p>
                 <span><time>2022</time>~<time>2023</time> </span>
-                University of Bristol Engineering College CS MSc
+                英国 布里斯托大学 工学院 计算机科学专业 硕士研究生在读
             </p>
             <p>
                 <span><time>2017</time>~<time>2021</time> </span>
@@ -306,7 +331,7 @@
                     </p>
                     <p>
                         制作过程让我对 TypeScript 有了全新的认识，对于自定义 Hook 的封装和各种 React 钩子更加熟悉。
-                        我将其总结成了一篇博客《TS 泛型的使用》。
+                        我将其总结成了一篇博客<a style="border-bottom: hidden" href="https://juejin.cn/post/7070392938915692552">《TS 泛型的使用》</a>。
                     </p>
                 </li>
 <!--                <li>-->
@@ -330,7 +355,7 @@
 <!--                </li>-->
                 <li>
                     <header>
-                        <h3>算账记账</h3>
+                        <h3>Dodo 记账</h3>
                         <span>
                             <a href="https://github.com/wuzx9905/morney-1">源码链接</a>
                             <a href="https://wuzx9905.github.io/morney-1-website/index.html#/money">项目预览</a>
@@ -342,8 +367,9 @@
 
                     <p>
                         这是我从自己和身边同学的需求出发，设计出的极简记账应用，特点是快速记账，
+                        并且能够利用 LocalStorage 存储数据，实现本地记录；
                         能够实现日期调整器和自定义标签的同时，利用 Echarts 生成图表，
-                        并可以通过图表查看自己的消费习惯。
+                        实现数据可视化，让使用者可以通过图表查看自己的消费习惯。
                     </p>
                     <p>
                         该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
@@ -360,7 +386,7 @@
                     <li>熟悉页面制作技巧，掌握 <strong>HTML</strong> 和 <strong>CSS</strong> 语法及用法</li>
                     <li>熟悉<strong>前后端分离</strong>技术，包括 AJAX、跨域、前端路由、Cookie、Session 等</li>
                     <li>熟练掌握 <strong>React 全家桶</strong>的使用，包括 create-react-app、ReactRouter、Redux 等</li>
-                    <li>熟悉 ES6，包括 let / Promise / await / 析构赋值</li>
+                    <li>熟悉 ES6，包括 let / Promise / await / 解构赋值</li>
                     <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
                     <li>了解 <strong>Webpack 的配置和优化</strong></li>
                 </ul>
@@ -407,16 +433,6 @@
                         </span>
                     </header>
                     <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
-                </li>
-                <li>
-                    <header>
-                        <h3>会动的太极八卦图</h3>
-                        <span>
-                            <a href="https://github.com/wuzx9905/html5-css3-demo1">源码链接</a>
-                            <a href="https://wuzx9905.github.io/html5-css3-demo1/index.html">项目预览</a>
-                        </span>
-                    </header>
-                    <p>这是一个纯 <strong>HTML</strong> 和 <strong>CSS</strong> 写成的会动的八卦图作品</p>
                 </li>
             </ul>
         </section>
@@ -467,7 +483,7 @@
 
 
     </article>
-    <script src="https://cdn.bootcdn.net/ajax/libs/echarts/5.1.2/echarts.min.js"></script>
+    <script src="/index.2bda262f.js"></script>
     <script src="/index.65c7a1e5.js"></script>
 </body>
 

@@ -73,7 +73,7 @@
 
         a {
             /*color: inherit;*/
-            color: #888;
+            color: #666;
             text-decoration: none;
             font-size: 16px;
             border-bottom: 1px solid;
@@ -97,7 +97,10 @@
             position: relative;
         }
 
-        .bio  a{
+        .bio>p:nth-child(4) > a{
+            border-bottom: hidden;
+        }
+        .bio>p:nth-child(5) > a{
             border-bottom: hidden;
         }
 
@@ -404,7 +407,7 @@
         </section>
 
         <section class="skills">
-            <h2>技能</h2>
+            <h2 class="page2">技能</h2>
             <div class="wrapper">
                 <div id="skills"></div>
                 <ul>
@@ -420,7 +423,7 @@
 
 
         <section class="openSource">
-            <h2 class="page2">开源项目</h2>
+            <h2>开源项目</h2>
             <ul>
                 <li>
                     <header>
@@ -518,8 +521,6 @@
                 </li>
             </ul>
         </section>
-
-
     </article>
     <script src="./echarts.js"></script>
     <script src="./main.js"></script>

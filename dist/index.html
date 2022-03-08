@@ -142,6 +142,7 @@
         .projects>ol>li h3 {
             display: inline-block;
         }
+
     
 </style>
     <style>
@@ -231,11 +232,30 @@
         }
 
         .openSource>h3 {}
+
+        .openSource>ul>li>img{
+            height: 200px;
+            width: 200px;
+            left: 0;
+            top: 0;
+            transform: translate(140%);
+        }
     
 </style>
     <style>
         .others h2{
             border-bottom: 2px solid #999;
+        }
+        .others>ul>li{
+            margin-bottom: 24px;
+        }
+        .others>ul>li>header {
+            display: flex;
+            justify-content: space-between;
+        }
+        .others>h3{
+            margin-bottom: 20px;
+            color: #666;
         }
     
 </style>
@@ -292,12 +312,12 @@
                 邮箱：<a href="mailto:Wuzx0523@outlook.com">Wuzx0523@outlook.com</a>
             </p>
             <p>GitHub：<a href="https://github.com/wuzx9905">https://github.com/wuzx9905</a></p>
-            <p>博客地址：<a href="https://juejin.cn/user/3711599164533917/posts">https://juejin.cn/user/3711599164533917/posts</a></p>
+            <p>博客地址：<a href="https://juejin.cn/user/3711599164533917/posts">掘金</a></p>
         </section>
         <section class="education">
             <h2>教育经历</h2>
             <p>
-                <span><time>2022</time>~<time>2023</time> </span>
+                <span><time>2021</time>~<time>2022</time> </span>
                 英国 布里斯托大学 工学院 计算机科学专业 硕士研究生在读
             </p>
             <p>
@@ -330,8 +350,8 @@
                         能够直接引用，有效提高前端开发效率。
                     </p>
                     <p>
-                        制作过程让我对 TypeScript 有了全新的认识，对于自定义 Hook 的封装和各种 React 钩子更加熟悉。
-                        我将其总结成了一篇博客<a style="border-bottom: hidden" href="https://juejin.cn/post/7070392938915692552">《TS 泛型的使用》</a>。
+                        制作过程让我对 <strong>TypeScript</strong> 有了全新的认识，对于自定义 Hook 的封装和各种 React 钩子更加熟悉。
+                        我将其总结成了一篇博客<a href="https://juejin.cn/post/7070392938915692552">《TS 泛型的使用》</a>。
                     </p>
                 </li>
 <!--                <li>-->
@@ -367,13 +387,26 @@
 
                     <p>
                         这是我从自己和身边同学的需求出发，设计出的极简记账应用，特点是快速记账，
-                        并且能够利用 LocalStorage 存储数据，实现本地记录；
-                        能够实现日期调整器和自定义标签的同时，利用 Echarts 生成图表，
+                        并且能够利用 <strong>LocalStorage</strong> 存储数据，实现本地记录；
+                        能够实现日期调整器和自定义标签的同时，利用 <strong>Echarts</strong> 生成图表，
                         实现数据可视化，让使用者可以通过图表查看自己的消费习惯。
                     </p>
                     <p>
                         该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
                     </p>
+                    <p>另外，我还详细总结了<a href="https://juejin.cn/post/7068696713795469320">项目中的技术细节</a>、<a href="https://juejin.cn/post/7070403294560157733">对项目的反思以及改进计划。</a></p>
+                </li>
+                <li>
+                    <header>
+                        <h3>自创前航网站</h3>
+                        <span>
+                        <a href="https://github.com/wuzx9905/nav-1">源码链接</a>
+                        <a href="https://wuzx9905.github.io/nav-1/src/index.html">项目预览</a>
+                            </span>
+                    </header>
+                    <p>基于解决搜索网站功能太过复杂和广告繁多的需求制作的一个简易前端导航网站。</p>
+                    <p>能够实现通过百度搜索引擎进行搜索，并且能够实现添加、删除标签功能。</p>
+                    <p>通过这个项目对基础的<strong> JavaScript </strong> 和 <strong>CSS</strong> 布局有了更深的认识，进一步巩固页面制作基础</p>
                 </li>
             </ol>
         </section>
@@ -404,16 +437,7 @@
                     </header>
                     <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
                 </li>
-                <li>
-                    <header>
-                        <h3>自创前航网站</h3>
-                        <span>
-                        <a href="https://github.com/wuzx9905/nav-1">源码链接</a>
-                        <a href="https://wuzx9905.github.io/nav-1/src/index.html">项目预览</a>
-                            </span>
-                    </header>
-                    <p>通过 <strong>hashmap</strong> 和 <strong>localStorage</strong> 实现前端导航网站</p>
-                </li>
+
                 <li>
                     <header>
                         <h3>手绘皮卡丘</h3>
@@ -433,6 +457,17 @@
                         </span>
                     </header>
                     <p>我在学习 <strong>Canvas</strong> 时做的一个小作品</p>
+                </li>
+                <li>
+                    <header>
+                        <h3>猜数字小程序</h3>
+                        <span>
+                            <a href="https://github.com/wuzx9905/mp-demo-1">源码链接</a>
+                        </span>
+                    </header>
+                    <p>这是学习<strong>小程序</strong>制作时实现的一个简单计数小游戏</p>
+                    <p>以下是微信扫码预览链接：</p>
+                    <img src="/app.2d03449e.png" alt="" class="app">
                 </li>
             </ul>
         </section>
@@ -475,9 +510,20 @@
 
         <section class="others">
             <h2>其他链接</h2>
+            <h3>目前已撰写 30 逾篇博客，以下列举几篇热门博客：</h3>
             <ul>
-                <li><a href="https://juejin.cn/user/3711599164533917">我的博客</a>，目前已有 21 篇技术文章</li>
-                <li><a href="https://github.com/wuzx9905">我的 GitHub</a>，过去两个月有 150 次提交</li>
+                <li>
+                    <p>简述<a href="https://juejin.cn/post/7070446028213714980"> JS 垃圾回收机制</a>，阐述对于垃圾回收的个人理解</p>
+                </li>
+                <li>
+                    <p><a href="https://juejin.cn/post/7021787701410005000">DOM 事件机制</a>，详细解释 DOM 事件模型相关概念，并举例封装事件委托</p>
+                </li>
+                <li>
+                    <p><a href="https://juejin.cn/post/7021787701410005000">jQuery 功能总结</a>，描述了如何使用 jQuery 获取元素、链式操作、修改元素属性等</p>
+                </li>
+                <li>
+                    <p><a href="https://juejin.cn/post/6922801430864592909">HTML 标签总结</a>，列举常见 HTML 标签，重视 HTML 语义化</p>
+                </li>
             </ul>
         </section>
 

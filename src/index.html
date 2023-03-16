@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport"
         content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no,viewport-fit=cover">
-    <title>吴梓贤-前端开发-2022</title>
+    <title>吴梓贤-前端开发-2023</title>
     <style>
         * {
             box-sizing: border-box;
@@ -37,9 +37,9 @@
             margin-top: 60px;
         }
 
-        #skills {
-            display: none;
-        }
+        /*#skills {*/
+        /*    display: none;*/
+        /*}*/
     </style>
     <style>
         body {}
@@ -146,35 +146,35 @@
 
     </style>
     <style>
-        .jobs {}
+        .school {}
 
-        .jobs>h2 {
+        .school>h2 {
             border-bottom: 2px solid #999;
         }
 
-        .jobs>ol {}
+        .school>ol {}
 
-        .jobs>ol>li {
+        .school>ol>li {
             margin: 12px 0;
         }
 
-        .jobs header {
+        .school header {
             display: flex;
             color: #666;
             margin-bottom: 12px;
         }
 
-        .jobs header>h3 {
+        .school header>h3 {
             font-size: 18px;
             color: #333;
         }
 
-        .jobs header>h4 {
+        .school header>h4 {
             margin-left: 1em;
             font-size: 18px;
         }
 
-        .jobs header>span {
+        .school header>span {
             font-size: 18px;
             margin-left: auto;
         }
@@ -278,13 +278,13 @@
                 width: auto;
             }
 
-            .jobs header {
+            .school header {
                 flex-direction: column;
             }
 
-            .jobs header>h3,
-            .jobs header>h4,
-            .jobs header>span {
+            .school header>h3,
+            .school header>h4,
+            .school header>span {
                 margin: 0;
             }
         }
@@ -312,12 +312,12 @@
         <section class="education">
             <h2>教育经历</h2>
             <p>
-                <span><time>2021</time>~<time>2022</time> </span>
-                英国 布里斯托大学 工学院 计算机科学专业 硕士研究生在读
+                <span><time>2021.9</time> ~ <time>2022.9</time> </span>
+                英国 布里斯托大学 工学院 计算机科学专业 硕士研究生
             </p>
             <p>
-                <span><time>2017</time>~<time>2021</time> </span>
-                中山大学 环境科学与工程学院 本科
+                <span><time>2017.9</time> ~ <time>2021.7</time> </span>
+                中山大学 环境科学与工程学院 本科（导师为<strong>"百人计划"</strong>副教授）
             </p>
         </section>
 
@@ -332,14 +332,53 @@
                     <li>熟悉 ES6，包括 let / Promise / await / 解构赋值</li>
                     <li>了解 <strong>TypeScript</strong> 的使用，我的项目就是 TS 实现的</li>
                     <li>了解 <strong>Webpack 的配置和优化</strong></li>
+                    <li>有<strong>小程序</strong>及项目部署经验，熟悉 git 基础操作</li>
                 </ul>
             </div>
         </section>
 
-
         <section class="projects">
             <h2>项目经历</h2>
             <ol>
+                <li>
+                    <header>
+                        <h3>Dodo 记账</h3>
+                        <span>
+                            <a href="https://github.com/wuzx9905/morney-1">源码链接</a>
+                            <a href="https://wuzx9905.github.io/morney-1-website/index.html#/money">项目预览</a>
+                        </span>
+                    </header>
+                    <p>2022.01 ~ 2022.02</p>
+                    <p>
+                        <b>项目描述：</b>一款基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
+                    </p>
+
+                    <p>
+                        <b>项目背景：</b>这是我从自己和身边同学的需求出发，设计出的极简记账应用，特点是快速记账，并能够支持数据持久化。
+                    </p>
+                    <p>
+                        <b>主要技术：</b>
+                    </p>
+                    <p>
+                        1. 能够利用 <strong>LocalStorage</strong> 存储数据，实现数据持久化；
+                    </p>
+                    <p>
+                        2. 使用 <strong>React Router</strong> 实现前端路由，用 HashRouter 模式实现不需要后台支持也能切换页面。
+                    </p>
+                    <p>
+                        3. 能够实现日期调整器和自定义标签的同时，利用 <strong>Echarts</strong> 生成图表，
+                        实现数据可视化，让使用者可以通过图表查看自己的消费习惯。
+                    </p>
+                    <p>
+                        4. 该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
+                        其中除了直接调用 React 自带的 api，还自己通过导入 useState 来实现 Hooks 封装，并利用 useEffect 实现数据监听。
+                    </p>
+                    <p>
+                        5. 利用 <strong>styled-components</strong> 自定义组件代替单独的 css 文件，避免结构臃肿的同时提高了编译效率。
+                    </p>
+                    <p><b>项目收获：</b>另外，我还详细总结了<a href="https://juejin.cn/post/7068696713795469320">项目中的技术细节</a>、<a href="https://juejin.cn/post/7070403294560157733">对项目的反思以及改进计划。</a></p>
+                </li>
+
                 <li>
                     <header>
                         <h3>DO-UI</h3>
@@ -348,17 +387,28 @@
                             <a href="https://wuzx9905.github.io/dodo-test-1/index.html#/">项目预览</a>
                         </span>
                     </header>
+                    <p>2021.10 ~ 2021.11</p>
                     <p>
-                        一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
-
-                    </p>
-                    <p>
+                        <b>项目描述：</b>一款基于 <strong>React</strong> / <strong>TypeScript</strong> / <strong>Webpack</strong> 的 UI 框架。
                         主要组件有按钮、弹出框、<strong>布局</strong>、图标等，能够直接引用，有效提高前端开发效率。
-
                     </p>
-
                     <p>
-                        制作过程让我对 <strong>TypeScript</strong> 有了全新的认识，对于自定义 Hook 的封装和各种 React 钩子更加熟悉。
+                        <b>主要技术：</b>
+                    </p>
+                    <p>
+                        1. 使用 <strong>React.MouseEventHandler</strong> 让图标能够响应相对应的事件。
+                    </p>
+                    <p>
+                        2. 使用 <strong>React Portal API</strong> 传送门来让组件渲染到根元素下，避免了层叠上下文带来的问题。
+                    </p>
+                    <p>
+                        3. 使用 <strong>TypeScript</strong> 泛型实现对多种数据类型的处理。
+                    </p>
+                    <p>
+                        4. 将 <strong>webpack.config</strong> 文件根据生产模式和开发模式的不同分成不同文件，提高编译效率并避免打包出来的文件体积过大。
+                    </p>
+                    <p>
+                        <b>项目收获：</b>制作过程让我对 <strong>TypeScript</strong> 有了全新的认识，对于自定义 Hook 的封装和各种 React 钩子更加熟悉。
                         我将其总结成了一篇博客<a href="https://juejin.cn/post/7070392938915692552">《TS 泛型的使用》</a>。
                     </p>
                 </li>
@@ -381,46 +431,27 @@
 <!--                        该系统<strong>大幅提高教学效率</strong>，优化教学流程，受到公司和用户的好评。-->
 <!--                    </p>-->
 <!--                </li>-->
+
                 <li>
                     <header>
-                        <h3>Dodo 记账</h3>
-                        <span>
-                            <a href="https://github.com/wuzx9905/morney-1">源码链接</a>
-                            <a href="https://wuzx9905.github.io/morney-1-website/index.html#/money">项目预览</a>
-                        </span>
-                    </header>
-                    <p>
-                        一个基于 <strong>React</strong> / <strong>TypeScript</strong> 的移动端单页面应用。
-                    </p>
-
-                    <p>
-                        这是我从自己和身边同学的需求出发，设计出的极简记账应用，特点是快速记账，
-                        并且能够利用 <strong>LocalStorage</strong> 存储数据，实现本地记录；
-                        能够实现日期调整器和自定义标签的同时，利用 <strong>Echarts</strong> 生成图表，
-                        实现数据可视化，让使用者可以通过图表查看自己的消费习惯。
-                    </p>
-                    <p>
-                        该项目大量使用 <strong>React Hooks</strong>，让我对 Hooks 有了深刻的理解和应用。
-                    </p>
-                    <p>另外，我还详细总结了<a href="https://juejin.cn/post/7068696713795469320">项目中的技术细节</a>、<a href="https://juejin.cn/post/7070403294560157733">对项目的反思以及改进计划。</a></p>
-                </li>
-                <li>
-                    <header >
                         <h3 >自创前航网站</h3>
                         <span>
                         <a href="https://github.com/wuzx9905/nav-1">源码链接</a>
                         <a href="https://wuzx9905.github.io/nav-1/src/index.html">项目预览</a>
                             </span>
                     </header>
-                    <p>基于解决搜索网站功能太过复杂和广告繁多的需求制作的一个简易前端导航网站。</p>
-                    <p>能够实现通过百度搜索引擎进行搜索，并且能够实现添加、删除标签功能。</p>
-                    <p>通过这个项目对基础的<strong> JavaScript </strong> 和 <strong>CSS</strong> 布局有了更深的认识，进一步巩固页面制作基础</p>
+                    <p>2021.9 ~ 2021.10</p>
+                    <p><b>项目描述：</b>基于解决搜索网站功能太过复杂和广告繁多的需求制作的一个简易前端导航网站,能够实现通过百度搜索引擎进行搜索，并且能够实现添加、删除标签功能。</p>
+                    <p><b>主要技术：</b></p>
+                    <p>1. 利用 <strong>hashMap</strong> 和 <strong>LocalStorage</strong> 实现对多个站点 url 的存储，方便在需要的时候直接调用相应的数据。</p>
+                    <p>2. 通过 <strong>keypress</strong> 事件监听键盘按键，在触发时遍历 hashMap 打开相应的网页。 </p>
+                    <p>3. 利用<strong>媒体查询</strong>来实现页面自适应布局，避免 PC 端与移动端体验不一。 </p>
+                    <p><b>项目收获：</b>通过这个项目对基础的<strong> JavaScript </strong> 和 <strong>CSS</strong> 布局有了更深的认识，进一步巩固页面制作基础。
+                        同时熟悉了 dom 原生事件，使用事件监听实现各种功能。
+                    </p>
                 </li>
             </ol>
         </section>
-
-
-
 
         <section class="openSource">
             <h2 >开源项目</h2>
@@ -430,14 +461,14 @@
                         <h3>手写 Redux</h3>
                         <span><a href="https://github.com/wuzx9905/redux-1">源码链接</a></span>
                     </header>
-                    <p>为了了解 Redux 核心概念，手写了 React-Redux 的 connect 函数，以及实现了两个常用的中间件 </p>
+                    <p>为了了解 Redux 核心概念，手写了 React-Redux 的 connect 函数，以及实现了两个常用的中间件。 </p>
                 </li>
                 <li>
                     <header>
                         <h3>手写 DOM 库</h3>
                         <span><a href="https://github.com/wuzx9905/DOM-1">源码链接</a></span>
                     </header>
-                    <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能</p>
+                    <p>实现了元素选择、元素创建、<strong>事件委托</strong>等常见功能。</p>
                 </li>
 
                 <li>
@@ -447,7 +478,7 @@
                             <a href="https://github.com/wuzx9905/mp-demo-1">源码链接</a>
                         </span>
                     </header>
-                    <p>这是学习<strong>小程序</strong>制作时实现的一个简单计数小游戏</p>
+                    <p>这是学习<strong>小程序</strong>制作时实现的一个简单计数小游戏。</p>
                     <p>以下是微信扫码预览链接：</p>
                     <img src="images/app.png" alt="" class="app">
                 </li>
@@ -491,14 +522,17 @@
 <!--        </section>-->
 
         <section class="others">
-            <h2>其他链接</h2>
+            <h2 class="page2">其他链接</h2>
             <h3>目前已撰写 30 逾篇博客，以下列举几篇热门博客：</h3>
             <ul>
                 <li>
-                    <p>简述<a href="https://juejin.cn/post/7070446028213714980"> JS 垃圾回收机制</a>，阐述对于垃圾回收的个人理解</p>
+                    <p><a href="https://juejin.cn/post/7070446028213714980">简述 JS 垃圾回收机制</a>，阐述对于垃圾回收的个人理解</p>
                 </li>
                 <li>
                     <p><a href="https://juejin.cn/post/7021787701410005000">DOM 事件机制</a>，详细解释 DOM 事件模型相关概念，并举例封装事件委托</p>
+                </li>
+                <li>
+                    <p><a href="https://juejin.cn/post/7021787701410005000">webpack 之手写 loader 和 plugin</a>，尝试手写一个简易的 loader 和 plugin，了解工作原理</p>
                 </li>
                 <li>
                     <p><a href="https://juejin.cn/post/7021787701410005000">jQuery 功能总结</a>，描述了如何使用 jQuery 获取元素、链式操作、修改元素属性等</p>
@@ -508,6 +542,64 @@
                 </li>
             </ul>
         </section>
+
+
+        <section class="school">
+            <h2>校园经历</h2>
+                    <ol>
+                        <li>
+                            <header>
+                                <h3> 中山大学环境科学与工程学院学生会 </h3>
+
+                                <span><time>2018年9月</time>~<time>2019年6月</time></span>
+
+                            </header>
+                            <ul>
+                                <li>
+                                    <p> 职务：<strong>外联部部长</strong></p>
+                                </li>
+                                <li>
+                                    负责筹划数个大型校级活动，如"无五克拉舞会"、"垃圾回收大作战"等，同时与辅导员老师沟通，帮助其工作协调安排；
+                                </li>
+                                <li>
+                                    与外界商家谈成赞助协议，与"九元航空"、"相同APP"等商家谈成价值超过十万元礼品、资金赞助。
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <header>
+                                <h3>中山大学环境科学与工程学院团委</h3>
+                                <span><time>2018年6月</time>~<time>2018年9月</time></span>
+                            </header>
+                            <ul>
+                                <li>职务：<strong>迎新总负责人</strong></li>
+                                <li>负责与学校、学院辅导员老师完成工作交接、帮助新生处理入学事宜、安排迎接新生活动等；</li>
+                                <li>期间，与外界商家达成价值超过五万元的赞助协议，并顺利完成辅导员老师安排的任务，保障迎新生活动全程顺利进行。</li>
+                            </ul>
+                        </li>
+                    </ol>
+                </section>
+
+<!--        <section class="self">-->
+<!--            <h2>自我评价</h2>-->
+<!--            <ol>-->
+<!--                <li>-->
+<!--                    <ul>-->
+<!--                        <li>-->
+<!--                            <p> 职务：<strong>外联部部长</strong></p>-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            负责筹划数个大型校级活动，如"无五克拉舞会"、"垃圾回收大作战"等，同时与辅导员老师沟通，帮助其工作协调安排；-->
+<!--                        </li>-->
+<!--                        <li>-->
+<!--                            与外界商家谈成赞助协议，与"九元航空"、"相同APP"等商家谈成价值超过十万元礼品、资金赞助。-->
+<!--                        </li>-->
+<!--                    </ul>-->
+<!--                </li>-->
+
+<!--            </ol>-->
+<!--        </section>-->
+
     </article>
     <script src="./echarts.js"></script>
     <script src="./main.js"></script>
